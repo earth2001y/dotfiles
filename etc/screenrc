@@ -1,0 +1,22 @@
+defencoding utf-8
+#escape ^Zz
+escape ^Tt
+
+#startup_message on
+
+vbell off
+
+# logging
+log on
+deflog on
+logfile "~/var/log/screen-%Y%m%d-%n.log"
+
+# 画面下に時刻＆スクリーン一覧を表示する。
+# hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+
+# 色つき。
+hardstatus alwayslastline "%{= rw} %H %{= wk}%-Lw%{= bw}%n%f* %t%{= wk}%+Lw %{= wk}%=%{= gk} %y/%m/%d %c "
+
+# 画面下にスクリーン一覧を表示する。
+# hardstatus alwayslastline "%w"
+
