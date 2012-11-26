@@ -13,5 +13,8 @@ for s in $HOME/etc/profile.d/*.sh ; do
 done
 
 export PS1='[\u:\W]$ '
+#export PS1='[\u@\h:\W]$ '
+#export PS1="[\u@\h:\w]$ "
+
 export EDITOR=`which vi`
 
