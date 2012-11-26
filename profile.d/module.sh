@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODULE_HOME=/opt/local/Modules/3.2.9
+MODULE_HOME=/opt/Modules/3.2.9
 
 # module
 if [ -z "$MODULE_HOME" ]; then
