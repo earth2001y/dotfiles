@@ -10,3 +10,22 @@ elif [ "_$sysname" == "_Darwin" ]; then
 	alias ls='ls -G'
 fi
 
+function convert-mp3() {
+
+	local input=''
+	local output=''
+
+	if [ $# -eq 1 ]; then
+		local input="$1"
+		local output="$1.mp3"
+	elif [ $# -eq 2 ]; then
+		local input="$1"
+		local output="$2"
+	else
+		echo 'convert-mp3 input [output]'
+		return 0;
+	fi
+
+	ffmpeg -y -i "$input" -acodec mp3 -ar 44100 -ab 192 "$output"
+}
+
