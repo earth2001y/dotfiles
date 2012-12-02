@@ -21,6 +21,9 @@ syntax on
 set guicursor=a:blinkon0
 highlight SpecialKey guifg=#0000BB
 
+set list
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
+
 " %< - 行が長すぎるときに切り詰める位置
 " %f - ファイル名（相対パス）
 " %F - ファイル名（絶対パス）
