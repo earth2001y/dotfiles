@@ -1,7 +1,7 @@
 "lang and codeset
 "----------------------------------------------------------------------------
 if has('mac')
-	set fileencodings=iso-2022-jp,sjis,euc-jp,utf-8
+	set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
 	set fileformats=unix,dos,mac
 	set langmenu=japanese
 endif
