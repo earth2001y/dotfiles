@@ -45,7 +45,7 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 " %P - カーソルの場所 %表示
 "
 "set statusline=%F%9(\%m%r%)%h%w\ [%Y]\[%{&ff}]\[%{&fenc}]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%l/%L]
-set statusline=[%n]\ %f%9(\%m%r%)%h%w[%Y][%{&ff}][%{&fenc!=''?&fenc:&enc}]%=\ %4l,%4v%5(\ %)[%3p%%]
+set statusline=[%n]\ %f%9(\%m%r%)%h%w[%Y][%{&ff}:%{&fenc!=''?&fenc:&enc}]%=\ %4l,%4v%5(\ %)[%3p%%]
 set laststatus=2
 
 
