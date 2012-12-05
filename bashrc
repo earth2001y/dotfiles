@@ -10,6 +10,8 @@ elif [ "_$sysname" == "_Darwin" ]; then
 	alias ls='ls -G'
 fi
 
+alias hip=`which tail` # answer for https://twitter.com/igaiga555/status/276291925634592768
+
 function convert-mp3() {
 
 	local input=''
