@@ -1,11 +1,9 @@
 "lang and codeset
 "----------------------------------------------------------------------------
 set enc=utf-8
-if has('mac')
-	set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
-	set fileformats=unix,dos,mac
-	set langmenu=japanese
-endif
+set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
+set fileformats=unix,dos,mac
+set langmenu=japanese
 
 "visual
 "----------------------------------------------------------------------------
