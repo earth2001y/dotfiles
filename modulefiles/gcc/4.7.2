@@ -1,0 +1,26 @@
+#%Module1.0#####################################################################
+##
+## dot modulefile
+##
+## modulefiles/dot.  Generated from dot.in by configure.
+##
+proc ModulesHelp { } {
+	global version
+
+	puts stderr "\tAdds `.' to your PATH environment variable"
+	puts stderr "\n\tThis makes it easy to add the current working directory"
+	puts stderr "\tto your PATH environment variable.  This allows you to"
+	puts stderr "\trun executables in your current working directory"
+	puts stderr "\twithout prepending ./ to the excutable name"
+	puts stderr "\n\tVersion $dotversion\n"
+}
+
+module-whatis	"adds `.' to your PATH environment variable"
+
+set	version	4.7.2
+set	prefix		/opt/gcc/$version
+
+prepend-path    PATH   		${prefix}/bin
+prepend-path    LD_LIBRARY_PATH		${prefix}/lib
+prepend-path    MANPATH		${prefix}/man
+
