@@ -12,6 +12,10 @@ for s in $HOME/etc/profile.d/*.sh ; do
 	fi
 done
 
+if [ "$sysname" == "Darwin" ]; then
+  export LANG='ja_JP.UTF-8'
+fi
+
 export PS1='[\u:\W]$ '
 #export PS1='[\u@\h:\W]$ '
 #export PS1="[\u@\h:\w]$ "
