@@ -14,6 +14,8 @@ done
 
 if [ "$sysname" == "Darwin" ]; then
   export LANG='ja_JP.UTF-8'
+elif [ "$sysname" == "Linux" ]; then
+  export LANG='ja_JP.UTF-8'
 fi
 
 export PS1='[\u:\W]$ '
