@@ -2,7 +2,7 @@ defencoding utf-8
 #escape ^Zz
 escape ^Tt
 
-#startup_message on
+startup_message off
 
 vbell off
 
