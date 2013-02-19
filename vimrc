@@ -46,6 +46,9 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 set statusline=[%n]\ %f%9(\%m%r%)%h%w[%Y][%{&ff}:%{&fenc!=''?&fenc:&enc}]%=\ %4l,%4v%5(\ %)[%3p%%]
 set laststatus=2
 
+"key map
+"----------------------------------------------------------------------------
+inoremap <C-c> <ESC>
 
 "edit
 "----------------------------------------------------------------------------
