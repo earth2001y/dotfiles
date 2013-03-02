@@ -23,4 +23,5 @@ export PS1='[\u:\W]$ '
 #export PS1="[\u@\h:\w]$ "
 
 export EDITOR=`which vi`
+export PATH=$HOME/bin/:$PATH
 
