@@ -34,3 +34,48 @@ function convert-mp3() {
 	ffmpeg -y -i "$input" -acodec mp3 -ar 44100 -ab 192 "$output"
 }
 
+# screen control functions
+
+function is-screen() {
+  local term=$(echo "$TERMCAP" | head -1 | cut -d "|" -f 1)
+  if [ "$term" == 'SC' ]; then
+    echo 'yes'
+  else
+    echo 'no'
+  fi
+}
+
+function screen() {
+  local cmd="$(which screen) $@"
+  if [ $(is-screen) == 'yes' ]; then
+    $cmd
+  else
+    exec $cmd
+  fi
+}
+
+function exec-on-screen() {
+  local cmd="$@"
+  if [ $(is-screen) == 'yes' ]; then
+    $(which screen) $cmd
+  else
+    $cmd
+  fi
+}
+
+function vi() {
+  exec-on-screen "$(which vi) $@"
+}
+
+function vim() {
+  exec-on-screen "$(which vim) $@"
+}
+
+function vimdiff() {
+  exec-on-screen "$(which vimdiff) $@"
+}
+
+function ssh() {
+  exec-on-screen "$(which ssh) $@"
+}
+
