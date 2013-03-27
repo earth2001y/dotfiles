@@ -20,3 +20,6 @@ hardstatus alwayslastline "%{= rw} %H %{= wk}%-Lw%{= bw}%n%f* %t%{= wk}%+Lw %{= 
 # 画面下にスクリーン一覧を表示する。
 # hardstatus alwayslastline "%w"
 
+# シェルを指定(環境変数$SHELLのものを使用)
+shell -$SHELL
+
