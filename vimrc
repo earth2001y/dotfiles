@@ -11,6 +11,7 @@ filetype plugin indent on
 set number
 set showmode
 set showmatch
+set hlsearch
 set ruler
 set nowrap
 "set wrap
