@@ -56,8 +56,9 @@ function screen() {
 
 function exec-on-screen() {
   local cmd="$@"
+  local title="${1##*/}"
   if [ $(is-screen) == 'yes' ]; then
-    $(which screen) $cmd
+    $(which screen) -t "$title" $SHELL --login -c "$cmd"
   else
     $cmd
   fi
