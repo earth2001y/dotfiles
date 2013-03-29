@@ -58,25 +58,25 @@ function exec-on-screen() {
   local cmd="$@"
   local title="${1##*/}"
   if [ $(is-screen) == 'yes' ]; then
-    $(which screen) -t "$title" $SHELL --login -c "$cmd"
+    $(which screen) -t "$title" $cmd
   else
     $cmd
   fi
 }
 
 function vi() {
-  exec-on-screen "$(which vi) $@"
+  exec-on-screen $(which vi) $@
 }
 
 function vim() {
-  exec-on-screen "$(which vim) $@"
+  exec-on-screen $(which vim) $@
 }
 
 function vimdiff() {
-  exec-on-screen "$(which vimdiff) $@"
+  exec-on-screen $(which vimdiff) $@
 }
 
 function ssh() {
-  exec-on-screen "$(which ssh) $@"
+  exec-on-screen $(which ssh) $@
 }
 
