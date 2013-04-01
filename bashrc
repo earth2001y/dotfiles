@@ -13,7 +13,7 @@ fi
 alias hip=`which tail` # answer for https://twitter.com/igaiga555/status/276291925634592768
 
 # make daily tempolary directory
-mkdir -p `date +tmp/%Y%m/%d`
+mkdir -p $HOME/tmp/$(date +%Y%m/%d)
 
 function convert-mp3() {
 
