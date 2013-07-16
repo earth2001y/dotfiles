@@ -18,6 +18,8 @@ set nowrap
 
 syntax on
 
+set t_Co=256
+
 set guicursor=a:blinkon0
 highlight SpecialKey guifg=#0000BB
 
